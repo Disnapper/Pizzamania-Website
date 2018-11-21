@@ -1,0 +1,40 @@
+/* Recent Projects Widget */
+.widget.ag_recentprojects_widget {
+  margin-bottom: 40px;
+}
+
+.recent-projects {
+  margin-right: -16%;
+}
+
+.recent-project {
+  float: left;
+  border: 3px solid #dcdcdc;
+  line-height: 0;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 24%;
+  margin: 2% 8% 6% 0;
+  max-width: 100px;
+}
+
+.tw-slide-panel {
+  .recent-projects {
+    margin-right: -3%;
+  }
+  .recent-project {
+    width: 30%; /* 3 per line */
+    margin: 0 1.5% 3%;
+  }
+}
+
+.recent-project a.hover {
+  background: none;
+  display: block;
+}
+
+.dark .recent-project {
+  border-color: #555;
+}

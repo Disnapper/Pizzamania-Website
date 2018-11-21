@@ -1,0 +1,553 @@
+/* Width smaller than 1500px */
+@media only screen and (max-width: 1500px) {
+  #sitecontainer .pagetitleloading .homeslideshow .bx-wrapper .bx-viewport img {
+    max-width: none !important;
+    min-width: 1500px !important;
+  }
+}
+
+/* Widths smaller than 1199 */
+@media only screen and (max-width: 1199px) {
+  .pagertable li {
+    width: 220px !important;
+
+    .pagertitle {
+      font-size: 16px;
+    }
+  }
+  .section .slidecaption .slidetitle,
+  .section .slidecaption h1 {
+    font-size: 54px !important;
+  }
+  .single .has-full-image.has-thumbnail .pagetitle .credits {
+    bottom: auto;
+    top: 20px;
+  }
+  .top {
+    display: none !important;
+  }
+
+  /* Rightside */
+  .rightside .rightcontent {
+    //width:515px;
+    width: 630px;
+    margin-right: 0;
+    padding-right: 22px;
+  }
+  .single-post .rightside .rightcontent {
+    width: 515px;
+  }
+  .rightside .righttitle {
+    width: 590px;
+    padding-right: 22px;
+  }
+  .sidebar {
+    padding-left: 15px;
+  }
+
+  /* Regular Grid */
+  .regulargrid {
+    a.brick-thumb-link {
+      min-height: 182px;
+    }
+    .isobrick .title {
+      font-size: 23px;
+      line-height: 1em;
+    }
+    .pageflip {
+      right: 10px;
+    }
+  }
+
+  /* Grid Section */
+  .grid-item .thumbovertext .button {
+    display: none;
+  }
+  .grid-item.fullgrid, .grid-item.fullgrid .isobrick-inner {
+    width: 594px;
+    height: 320px;
+  }
+  .grid-item.halfgrid, .grid-item.halfgrid .isobrick-inner {
+    width: 295px;
+    height: 317px;
+  }
+  .grid .grid-item.fullgrid .thumbovertext .title,
+  .grid .grid-item.fullgrid .thumbovertext .title a,
+  .carousel .carouselpost .thumbovertext .title,
+  .carousel .carouselpost .thumbovertext .title a {
+    font-size: 38px;
+    margin-top: 5px;
+  }
+  .grid {
+    .grid-item.halfgrid .thumbovertext .title,
+    .grid-item.halfgrid .thumbovertext .title a {
+      font-size: 26px;
+      margin-top: 5px;
+    }
+    .pageflip {
+      right: 14px;
+    }
+  }
+  .section.grid.grid-full {
+    .halfgrid {
+      width: 302px;
+    }
+    .fullgrid {
+      width: 607px;
+    }
+    .pageflip {
+      right: 0;
+      margin-right: 12px;
+    }
+  }
+
+  .related-posts {
+    .grid-item {
+      width: 100%;
+      .isobrick-inner {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Grid Badges */
+  .grid {
+    .badge a {
+      padding: 8px;
+    }
+    .badge a:after {
+      border-bottom-width: 26px;
+    }
+    .badge a:before {
+      border-top-width: 26px;
+    }
+    .pageflip {
+      right: 22px;
+    }
+  }
+
+  /* Review Circles */
+  .section .inner-content .c100,
+  .regulargrid .inner-content .c100 {
+    font-size: 100px;
+  }
+  .grid-item.halfgrid .inner-content .c100,
+  .regulargrid .isobrick .inner-content .c100 {
+    font-size: 70px;
+  }
+
+  /* Post */
+  .single .no-full-image h1.title {
+    font-size: 2.75em;
+    font-size: 5.4vw !important;
+  }
+  .single-post .pagetitleloading .pagetitle .title {
+    font-size: 3.5em;
+  }
+}
+
+/* Widths between 992px and 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Disable for touch devices at this size */
+  .full-bg-image {
+    background-attachment: scroll !important;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .post-break .wp-caption-text {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  /* Review Breakdown */
+  .breakdown {
+    padding-top: 10px;
+
+    .table {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .table, .table-row, .table-cell {
+      display: block;
+    }
+    .inner-content {
+      float: none;
+    }
+  }
+}
+
+/* Widths between less than 991px */
+@media only screen and (max-width: 991px) {
+  #sitecontainer .pagetitleloading .homeslideshow .bx-wrapper .bx-viewport img {
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+  .pagercontainer {
+    display: none;
+  }
+  .home.page .slidecaption {
+    padding-bottom: 0 !important;
+  }
+  .section .slidecaption .slidetitle,
+  .section .slidecaption h1,
+  .single-post .pagetitle .title,
+  .single .no-full-image h1.title {
+    font-size: 42px !important;
+  }
+  .pagetitle img.top-bg-image {
+    min-width: 1100px;
+  }
+  .imagecover {
+    height: 350px;
+  }
+  .single .has-thumbnail .slidecaptioncenter {
+    margin-top: 0;
+  }
+
+  .single-slideshow .button {
+    font-size: 12px;
+  }
+  .post .date {
+    display: none;
+  }
+
+  #footer {
+    .one-third {
+      width: 100%;
+    }
+  }
+
+  /* Related Posts */
+  .related-posts {
+    .grid-item {
+      width: 49%;
+      height: 315px;
+    }
+  }
+
+  /* Grid */
+  .section.grid.grid-full {
+    .halfgrid {
+      width: 344px;
+    }
+    .fullgrid {
+      width: 692px;
+    }
+  }
+  .grid-item.fullgrid, .grid-item.fullgrid .isobrick-inner {
+    width: 692px;
+  }
+  .grid-item.halfgrid, .grid-item.halfgrid .isobrick-inner {
+    width: 344px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    margin: 0;
+    width: 100%;
+    padding: 40px 15px 0 15px;
+
+    .sidebarcontent {
+      width: 100%;
+      padding-top: 0 !important;
+    }
+  }
+
+  /* Inputs */
+  input#s, .search-form {
+    max-width: none;
+  }
+
+  /* Pagination */
+  .pagination {
+    .divider {
+      margin-right: 40px;
+    }
+  }
+
+  .imagecover img {
+    margin-top: 0 !important;
+  }
+
+  .slidecaption .slidetitle {
+    font-size: 50%;
+    line-height: 1em;
+  }
+  #menu {
+    display: none;
+  }
+  .mobile-link {
+    display: block;
+    float: right;
+    min-width: 50%;
+  }
+  .altnav {
+    .mobile-link {
+      margin-bottom: 15px;
+    }
+    .top-nav .table-row {
+      display: block;
+    }
+    #logo.table-cell {
+      display: block;
+      float: left;
+      width: auto;
+      min-width: 50%;
+      margin-bottom: 15px;
+    }
+    .top-ad {
+      width: 100%;
+      display: block;
+      padding: 0;
+    }
+    .top-ad .alignright {
+      float: none;
+    }
+  }
+  .pagercontainer {
+    display: none;
+  }
+  .home.page .slidecaption {
+    padding-bottom: 0 !important;
+  }
+  .pagetitleloading.background-imaged .pagetitle {
+    padding: 75px 0;
+  }
+
+}
+
+@media screen and (max-width: 782px) {
+  .admin-bar #mobilemenu {
+    margin-top: 46px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-bar {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Disable on mobile sizes */
+  .postcontent .full-bg-image {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    background-attachment: scroll;
+  }
+
+  .full-bg-image {
+    padding-left: 100px;
+    margin-left: -100px;
+    padding-right: 100px;
+    margin-right: -100px;
+    background-position: 50% 50% !important;
+  }
+  .backgroundsize {
+    .imagecover {
+      height: 100% !important;
+      .post-break {
+        height: 100%;
+        .full-bg-image {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .postcontent .post-break .wp-caption-text {
+    padding-right: 25px;
+    margin-right: 0;
+  }
+  .pagetitle img.top-bg-image {
+    min-width: 900px;
+  }
+  .imagecover {
+    height: 275px;
+  }
+
+  /* Review Breakdown */
+  .breakdown {
+    padding: 10px 30px 15px 30px;
+
+    .table {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .table, .table-row, .table-cell {
+      display: block;
+    }
+    .inner-content {
+      float: none;
+    }
+  }
+
+  /* Related Posts */
+  .related-posts {
+    .grid-item {
+      width: 100%;
+    }
+  }
+
+  /* Post Content  */
+  .single .rightside {
+    .rightcontent {
+      padding-left: 0;
+    }
+  }
+
+  /* Sharing */
+  .sharing, .sharingwrap {
+    position: relative !important;
+    width: 100%;
+    left: 0 !important;
+  }
+  .sharing {
+    padding-top: 30px;
+  }
+  .sharingwrap {
+    margin-bottom: -30px;
+  }
+
+  .sharingwrap {
+    .sharing {
+
+      a, aside {
+        width: 31%;
+        background: #f3f3f3;
+        padding: 10px;
+      }
+      a.comment i {
+        line-height: 28px;
+      }
+    }
+  }
+
+  /* Comments */
+  .singlecomment {
+    margin-left: 0;
+  }
+  .comment .avatar {
+    display: none;
+  }
+  .listcomments .children {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  /* Breaking News */
+  .breaking div.breaking-title {
+    background: transparent;
+    float: none;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding: 0;
+    margin: 0;
+  }
+  .breaking div.breaking-title:after {
+    display: none;
+  }
+  .breaking .breaking-ticker {
+    margin: auto;
+  }
+
+  /* Topbar Sections */
+  .topbar-right, .topbar-left {
+    text-align: center;
+  }
+
+  .section-title {
+    .vertical-div {
+      display: none;
+    }
+    span {
+      display: block;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+    p {
+      line-height: 16px;
+    }
+  }
+
+  .grid, .imagegrid.full {
+    .grid-item.halfgrid,
+    .grid-item.halfgrid .isobrick-inner {
+      width: 360px;
+    }
+    .grid-item.fullgrid {
+      width: 360px;
+      height: 317px;
+    }
+    .grid-item.fullgrid .isobrick-inner {
+      height: 317px;
+      margin-left: -150px;
+    }
+  }
+  .grid .grid-item.fullgrid .thumbovertext .title,
+  .grid .grid-item.fullgrid .thumbovertext .title a {
+    font-size: 26px;
+  }
+  .section .inner-content .c100,
+  .regulargrid .inner-content .c100 {
+    font-size: 75px;
+  }
+  .regulargrid .one-half {
+    width: 360px;
+  }
+
+  /* Single Post */
+  .pagetitleloading.background-imaged .pagetitle {
+    padding: 60px 0;
+  }
+  .section .slidecaption .slidetitle,
+  .section .slidecaption h1,
+  .single-post .pagetitle .title,
+  .single .no-full-image h1.title {
+    font-size: 32px !important;
+  }
+
+  /* Badges */
+  .badge a {
+    padding: 8px;
+  }
+  .badge a:after {
+    border-bottom-width: 26px;
+  }
+  .badge a:before {
+    border-top-width: 26px;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 420px;
+  }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 300px;
+  }
+
+  /* Sharing */
+  #share-box {
+    h4 {
+      font-size: 32px !important;
+    }
+    i {
+      font-size: 52px;
+      margin: 0 2px;
+    }
+  }
+  .pagetitleloading .homeslideshow .bx-wrapper .bx-viewport img {
+    margin-left: -200px;
+  }
+}

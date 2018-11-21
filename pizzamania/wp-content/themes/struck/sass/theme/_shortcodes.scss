@@ -1,0 +1,205 @@
+a.tw-lightbox {
+  color: #777;
+}
+
+.struck {
+  ul.tw-tabs li a.active {
+    height: 38px
+  }
+  ul.tw-tabs li a {
+    line-height: 22px;
+  }
+  .tw-toggle .tw-toggle-trigger,
+  .tw-accordion .tw-accordion-trigger {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.tw-column p {
+  margin-bottom:1.5em;
+}
+
+.struck .tw-post-break {
+  margin-bottom: 50px;
+}
+
+.tw-toggle .tw-column {
+  margin-bottom: 0;
+}
+
+.generatedcontent .content ul.tw-tabs {
+  margin-bottom: 15px;
+}
+
+.sidepostcontainer.isotopecontainer {
+  padding-bottom: 0;
+  margin-right: -32px;
+
+  .title-shortcode, .date {
+    margin-bottom: 20px;
+  }
+  .date {
+    color: #000;
+    @include opacity(0.5);
+    a {
+      color: #000;
+    }
+  }
+  a.more-link {
+    margin-top: 20px;
+  }
+}
+
+.tw-postshortcode {
+  .tw-one-half, 
+  .tw-one-third, 
+  .tw-two-third, 
+  .tw-three-fourth, 
+  .tw-one-fourth, 
+  .tw-one-fifth, 
+  .tw-two-fifth, 
+  .tw-three-fifth, 
+  .tw-four-fifth, 
+  .tw-one-sixth, 
+  .tw-five-sixth {
+    padding-right: 4%;
+    padding-bottom: 25px;
+    float: left;
+  }
+}
+
+.tw-postshortcode h3, .tw-postshortcode h3 a {
+  color: #222;
+}
+
+.tw-postshortcode h4.title-shortcode {
+  margin-bottom: 35px;
+}
+
+.struck .tw-postshortcode, .struck .tw-postshortcode p {
+  font-size: 14px !important;
+  line-height: 2em !important;
+  margin-bottom: 20px !important;
+}
+
+.struck .tw-postshortcode h3, .struck .tw-postshortcode h3 a {
+  font-size: 22px !important;
+  line-height: 28px;
+}
+
+.struck .tw-tabs-shortcode li p {
+  font-size: 16px;
+  line-height: 2em;
+  margin-bottom: 20px;
+}
+
+.generatedcontent .content .tw-pricing ul li:before,
+.generatedcontent .content .tw-tabs-shortcode ul li:before {
+  display: none;
+}
+
+.struck {
+  .tw-button,
+  a.tw-button,
+  .tw-postshortcode a.more-link {
+    background: transparent;
+  }
+  a.tw-button.shortcode.custom {
+    border-color: transparent !important;
+    color: #fff;
+  }
+  .tw-button {
+    /* Button Colors */
+    &.red {
+      background: #C60108;
+    }
+
+    &.orange {
+      background: #E97F02;
+    }
+
+    &.yellow {
+      background: #ECBA09;
+    }
+
+    &.green {
+      background: #8FBE00;
+    }
+
+    &.blue {
+      background: #00A8C6;
+    }
+
+    &.purple {
+      background: #490A3D;
+    }
+
+    &.purple:hover, &.blue:hover, &.green:hover, &.yellow:hover, &.orange:hover, &.red:hover {
+      background: #333;
+    }
+  }
+}
+
+.struck {
+  .tw-social-icon {
+    width: 25px;
+    height: 25px;
+    background-size: 20px;
+    @include opacity(0.5);
+    background-color: transparent;
+
+    svg {
+      fill: currentColor;
+    }
+
+    &:hover {
+      background-color: transparent;
+      @include opacity(1);
+    }
+
+    .svg & {
+      background-size: 20px;
+    }
+  }
+}
+
+.dark {
+  .svg & {
+    .tw-social-icon {
+      &.twitter {
+        background-image: url(images/icons/twitter-white.svg);
+      }
+      &.facebook {
+        background-image: url(images/icons/facebook-white.svg);
+      }
+      &.dribbble {
+        background-image: url(images/icons/dribbble-white.svg);
+      }
+      &.instagram {
+        background-image: url(images/icons/instagram-white.svg);
+      }
+      &.google {
+        background-image: url(images/icons/google-white.svg);
+      }
+      &.pinterest {
+        background-image: url(images/icons/pinterest-white.svg);
+      }
+      &.linkedin {
+        background-image: url(images/icons/linkedin-white.svg);
+      }
+      &.rss {
+        background-image: url(images/icons/rss-white.svg);
+      }
+      &.stumble {
+        background-image: url(images/icons/stumbleupon-white.svg);
+      }
+      &.vimeo {
+        background-image: url(images/icons/vimeo-white.svg);
+      }
+      &.youtube {
+        background-image: url(images/icons/youtube-white.svg);
+      }
+    }
+  }
+}
+

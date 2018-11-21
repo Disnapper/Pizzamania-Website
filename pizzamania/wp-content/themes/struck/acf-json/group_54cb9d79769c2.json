@@ -1,0 +1,257 @@
+{
+    "key": "group_54cb9d79769c2",
+    "title": "Taxonomy Options",
+    "fields": [
+        {
+            "key": "field_54db8888f0ad2",
+            "label": "Template",
+            "name": "custom_template",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Turn on to use custom template options for this taxonomy page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default (Minimal)",
+                "custom": "Custom"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "default",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_54cb9d816a1cd",
+            "label": "Background Image",
+            "name": "background_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Add a custom background image for this taxonomy.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "fullslideshow",
+            "library": "all"
+        },
+        {
+            "key": "field_54cba88006aae",
+            "label": "Post Layout",
+            "name": "post_layout",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Select a custom layout for this taxonomy.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "grid": "Grid",
+                "minimal": "Minimal",
+                "classic": "Classic"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_54db8b1ef0ad3",
+            "label": "Filters",
+            "name": "filter",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Turn on\/off filter links.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_54db93405d9e4",
+            "label": "Title Alignment",
+            "name": "title_alignment",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "center": "Center"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_54db93765d9e5",
+            "label": "Grid Crop",
+            "name": "crop",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Turn on\/off cropping of grid items. Turning this off will allow the thumbnails to have their original aspect ratio.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_54cba88006aae",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_54de3af1df7d5",
+            "label": "Grid Columns",
+            "name": "columns",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    },
+                    {
+                        "field": "field_54cba88006aae",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_54db94085d9e7",
+            "label": "Alignment",
+            "name": "alignment",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Change the alignment of the filter items and posts.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54db8888f0ad2",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "center": "Center"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1423850287
+}

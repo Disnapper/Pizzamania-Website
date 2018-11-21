@@ -1,0 +1,137 @@
+/* Author Page */
+.author {
+  .section-title {
+    margin-bottom: 25px;
+  }
+  .authorboxfull {
+    margin-bottom: 40px;
+
+    .text-container {
+      padding: 0;
+      background: none;
+    }
+    .text-container:after {
+      display: none;
+    }
+    .avatar-container h4 {
+      display: none;
+    }
+  }
+}
+
+/* Author Box */
+.authorboxwrap {
+  margin: 0 0 55px 0;
+}
+
+.authorboxfull {
+
+  .text-container {
+    background: #e3e3e3;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    position: relative;
+  }
+  .text-container:after {
+    content: "";
+    position: absolute !important;
+    top: 0;
+    left: -20px;
+    z-index: 100;
+    width: 0;
+    height: 0;
+    border-top-width: 0;
+    border-right: 20px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 20px solid transparent;
+  }
+  .avatar-container {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  .author-description {
+    line-height: 1.5em;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .authorsocial {
+    margin-top: 15px;
+    margin-bottom: -5px;
+
+    a i, a:hover i {
+      background: #222;
+      color: #fff;
+      font-size: 16px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      display: block;
+      float: left;
+      line-height: 30px;
+      text-align: center;
+      -moz-transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    a:hover i {
+      background: #222 !important;
+    }
+
+    a i.fa-twitter {
+      background-color: #39a9e0;
+    }
+    a i.fa-facebook {
+      background-color: #3b5998;
+    }
+    a i.fa-dribbble {
+      background-color: #ea4c89;
+    }
+    a i.fa-instagram {
+      background-color: #4E433C;
+    }
+    a i.fa-linkedin {
+      background-color: #4875B4;
+    }
+    a i.fa-pinterest {
+      background-color: #910101;
+    }
+    a i.fa-tumblr {
+      background-color: #34526F;
+    }
+    a i.fa-vimeo-square {
+      background-color: #1ab7ea;
+    }
+    a i.fa-youtube-play {
+      background-color: #C4302B;
+    }
+    a i.fa-google-plus-square {
+      background-color: #C63D2D;
+    }
+    a i.fa-trello {
+      background-color: #246e98;
+    }
+    a i.fa-stack-overflow {
+      background-color: #fe7a15;
+    }
+    a i.fa-github {
+      background-color: #4E433C;
+    }
+  }
+}

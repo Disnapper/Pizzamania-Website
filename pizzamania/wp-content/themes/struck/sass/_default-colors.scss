@@ -1,0 +1,75 @@
+html, #footer {
+  background: #f3f3f3;
+}
+
+#footer {
+  color: #9e9e9e;
+}
+
+#sitecontainer,
+.page-content-wrapper,
+.pagination .pagenumbers {
+  background: #fff;
+}
+
+a.more-link,
+.regular-posts a.more-link,
+.widget .tagcloud a:hover,
+.widget .recent-project:hover {
+  border-color: #00a498;
+}
+
+a, a:hover, .thumbintro span a,
+a.more-link,
+span.highlight,
+.button,
+.tw-button,
+.struck a.tw-button.shortcode,
+a.button,
+a.more-link,
+#submit,
+.tw-postshortcode a.more-link,
+input[type=submit],
+.single .authorinfo.not-full a:hover,
+.struck .tw-button, .struck a.tw-button, .struck .tw-postshortcode a.more-link {
+  color: #00a498;
+}
+
+.badges a:hover,
+.widget .tagcloud a:hover,
+span.respond-link a:hover,
+a.more-link:hover,
+.button:hover,
+a.button:hover,
+a.more-link:hover,
+#submit:hover,
+.tw-postshortcode a.more-link:hover,
+input[type=submit]:hover,
+.button:active,
+.tw-button:active,
+a.tw-button:active,
+a.button:active,
+a.more-link:active,
+#submit:active,
+.tw-postshortcode a.more-link:active,
+input[type=submit]:active,
+.struck .mejs-controls .mejs-time-rail .mejs-time-buffering, .struck .mejs-controls .mejs-time-rail .mejs-time-current, .struck .mejs-controls .mejs-volume-button .mejs-volume-slider,
+.struck .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current, .struck .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.struck .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current  {
+  background: #00a498;
+}
+
+.badges a:hover,
+span.respond-link a:hover,
+.button,
+a.button,
+a.more-link,
+#submit,
+.tw-postshortcode a.more-link,
+input[type=submit] {
+  border-color: #00a498;
+}
+
+*::selection {
+  background: #00a498;
+}

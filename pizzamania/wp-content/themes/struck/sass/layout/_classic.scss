@@ -1,0 +1,33 @@
+.classic {
+  padding-top: 50px;
+  border-top: 1px solid #f3f3f3;
+  border-color: rgba(0, 0, 0, 0.05);
+  text-align: left;
+
+  .content {
+    text-align: left;
+  }
+
+  .date, .author, .subtitle, .tw-bullet {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #555;
+    @include opacity(0.5);
+  }
+
+  .page-details, .post-details {
+    margin-top: -10px;
+  }
+
+  .title h2 {
+    margin-bottom: 30px;
+  }
+
+  .imagecontainer {
+    margin-bottom: 40px;
+  }
+
+  a.more-link {
+    margin-top: 3em;
+  }
+}

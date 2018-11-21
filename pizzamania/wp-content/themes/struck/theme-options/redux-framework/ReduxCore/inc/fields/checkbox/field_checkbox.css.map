@@ -1,0 +1,6 @@
+{
+"version": 3,
+"mappings": "AACI,+BAAM;EACF,cAAc,EAAE,GAAG;EACnB,KAAK,EAAE,IAAI;;AAEX,2CAAY;EACR,UAAU,EAAE,CAAC;EACb,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,IAAI",
+"sources": ["field_checkbox.scss"],
+"file": "field_checkbox.css"
+}

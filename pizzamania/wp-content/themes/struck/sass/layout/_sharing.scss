@@ -1,0 +1,85 @@
+/**
+ * Sharing Section
+ */
+.sharing {
+  margin-bottom: 50px;
+
+  .no-tags &.badges {
+    float: none;
+  }
+
+  &.badges {
+    float: right;
+    text-align: center;
+
+    .sharecircle {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 12px;
+    }
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 0;
+      margin-right: 12px;
+      font-size: 12px;
+    }
+
+    a, span.disabled {
+      padding: 18px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+/* Share Overlay */
+#share-box {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 40px;
+}
+
+#share-box .title {
+  margin-bottom: 30px;
+}
+
+#share-box i {
+  font-size: 55px;
+  margin: 0 10px;
+}
+
+#share-box span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+/* Icon Colors */
+#share-box a.facebook-icon i {
+  color: #3b5998;
+}
+
+#share-box a.twitter-icon i {
+  color: #39a9e0;
+}
+
+#share-box a.linkedin-icon i {
+  color: #007fb1;
+}
+
+#share-box a.tumblr-icon i {
+  color: #2c4762;
+}
+
+#share-box a.pinterest-icon i {
+  color: #cb2027;
+}
+
+#share-box a.googleplus-icon i {
+  color: #d14836;
+}

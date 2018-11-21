@@ -1,0 +1,67 @@
+.single-carousel .gallery-icon a:hover .gallery-caption span,
+.single-gallery .gallery-item a:hover .gallery-caption span {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  display: block;
+}
+
+.single-carousel .gallery-icon .gallery-caption span,
+.single-gallery .gallery-item .gallery-caption span {
+  padding: 30px;
+  -webkit-animation-name: fadeOutDown;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.45s;
+  -moz-animation-duration: 0.45s;
+  -ms-animation-duration: 0.45s;
+  -o-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+}
+
+.no-csstransitions .single-carousel .gallery-icon:hover img,
+.no-csstransitions .single-gallery .gallery-item:hover img {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  /* IE 5-7 */
+  filter: alpha(opacity=30);
+  /* Netscape */
+  -moz-opacity: 0.3;
+  /* Safari 1.x */
+  -khtml-opacity: 0.3;
+  /* Good browsers */
+  opacity: 0.3;
+}
+
+/* Carousel and Gallery Image Hover */
+.csstransitions .single-carousel a img,
+.csstransitions .single-gallery a img {
+  transition: transform 0.45s, filter 0.45s, opacity 0.45s ease-in-out;
+  -webkit-transition: -webkit-transform 0.45s, -webkit-filter 0.45s, -webkit-opacity 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: -o-transform 0.45s, -o-filter 0.45s, -o-opacity 0.45s ease-in-out;
+  -ms-transition: -ms-transform 0.45s, -ms-filter 0.45s, opacity 0.45s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* This forces hardware acceleration for more consistent transitions */
+}
+
+.csstransitions .single-carousel a:hover img,
+.csstransitions .single-gallery a:hover {
+  background: #333;
+}
+
+.csstransitions .single-carousel a:hover img,
+.csstransitions .single-gallery a:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  @include opacity(0.3);
+}

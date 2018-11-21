@@ -1,0 +1,30 @@
+/* Badges */
+.image-title-bg {
+  .badges {
+    margin-bottom: 20px;
+  }
+}
+
+.badges a, .badges span.disabled, .widget .tagcloud a {
+  display: inline-block;
+  color: #000;
+  padding: 14px 12px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  font-size: 10px !important;
+  line-height: 0 !important;
+  @include opacity(0.5);
+
+  &:active, &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    @include opacity(1);
+  }
+}

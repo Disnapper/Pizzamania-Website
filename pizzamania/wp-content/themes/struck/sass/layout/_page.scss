@@ -1,0 +1,20 @@
+/**
+ * General Page Styles
+ */
+.page-content-inner {
+  padding-bottom: 50px;
+}
+
+.page-align-center {
+  .page-content-inner {
+    text-align: center;
+  }
+}
+
+.page-align-left .page-content-inner {
+  text-align: left;
+}
+
+.page-content .content {
+  padding-bottom: 50px;
+}

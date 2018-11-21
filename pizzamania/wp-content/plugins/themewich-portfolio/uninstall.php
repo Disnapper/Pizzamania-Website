@@ -1,0 +1,1 @@
+// make sure we can uninstall properly

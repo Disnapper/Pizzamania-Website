@@ -1,0 +1,369 @@
+/////////////////////
+// General Styles  //
+/////////////////////
+
+html {
+  padding: 0 !important;
+  font-size: 16px; /* Initial font size */
+}
+
+body {
+  width: 100%;
+  -ms-word-wrap: break-word; /* Make sure long words break */
+  word-wrap: break-word;
+}
+
+/* Set Box Sizing */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * Containers
+ */
+#sitecontainer {
+  z-index: 1;
+  overflow: hidden;
+}
+
+/**
+ * Alignment
+ */
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+/**
+ * Basic Text/Display
+ */
+strong {
+  font-weight: bold;
+}
+
+sup {
+  vertical-align: super;
+  top:0;
+}
+
+sub {
+  vertical-align: sub;
+  bottom:0;
+}
+
+.zeromargin {
+  margin: 0 !important;
+}
+
+.display {
+  display: block;
+}
+
+.table {
+  display: table;
+  float: none;
+  margin-bottom: 0;
+}
+
+.tr {
+  display: table-row;
+  float: none;
+}
+
+.td {
+  display: table-cell;
+  float: none;
+}
+
+.verticalmiddle {
+  vertical-align: middle;
+}
+
+.hidden, .zero-opacity {
+  @include opacity(0);
+}
+
+.disappear {
+  @include opacity(0);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.appear,
+.disappear.appear {
+  @include opacity(1);
+}
+
+/**
+ * Clearing
+ */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.mobileclear {
+  display: none;
+}
+
+/**
+ * Loading Animations
+ */
+.loading,
+.loading-dark {
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.ajax-loader {
+  display: block;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.ajax-loading-div {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Spin Animation */
+.svg.smil {
+  .loading {
+    background-image: url(images/loaders/puff.svg);
+    background-size: 50px;
+
+    &.audio {
+      background-image: url(images/loaders/audio.svg);
+      background-size: 30px;
+    }
+    &.ball-triangle {
+      background-image: url(images/loaders/ball-triangle.svg);
+    }
+    &.bars {
+      background-image: url(images/loaders/bars.svg);
+    }
+    &.circles {
+      background-image: url(images/loaders/circles.svg);
+    }
+    &.grid {
+      background-image: url(images/loaders/grid.svg);
+    }
+    &.hearts {
+      background-image: url(images/loaders/hearts.svg);
+    }
+    &.oval {
+      background-image: url(images/loaders/oval.svg);
+    }
+    &.puff {
+      background-image: url(images/loaders/puff.svg);
+    }
+    &.rings {
+      background-image: url(images/loaders/rings.svg);
+    }
+    &.spinning-circles {
+      background-image: url(images/loaders/spinning-circles.svg);
+    }
+    &.tail-spin {
+      background-image: url(images/loaders/tail-spin.svg);
+    }
+    &.three-dots {
+      background-image: url(images/loaders/three-dots.svg);
+    }
+  }
+}
+
+/* FallBacks */
+.loading {
+  background-image: url(images/loading.gif);
+}
+
+/**
+ * No JS Alert
+ */
+.alert {
+  /* For Non-Javascript Enabled Browsers */
+  background: #ffffff;
+  text-align: center;
+  padding: 5px 0px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  @include opacity(0.9);
+
+  p {
+    font-size: 24px;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-left: -30px;
+    margin-top: -18px;
+  }
+}
+
+/**
+ * Responsive Images
+ */
+.scale-with-grid,
+#sitecontainer img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/**
+ * Selections
+ */
+::selection {
+  color: #fff;
+}
+
+/**
+ * General Use Column Widths
+ */
+.one-half {
+  width: 48%;
+}
+
+.one-third {
+  width: 30.66%;
+}
+
+.two-third {
+  width: 65.33%;
+}
+
+.one-fourth {
+  width: 22%;
+}
+
+.three-fourth {
+  width: 74%;
+}
+
+.one-fifth {
+  width: 16.8%;
+}
+
+.two-fifth {
+  width: 37.6%;
+}
+
+.three-fifth {
+  width: 58.4%;
+}
+
+.four-fifth {
+  width: 79.2%;
+}
+
+.one-sixth {
+  width: 13.33%;
+}
+
+.five-sixth {
+  width: 82.67%;
+}
+
+.one-half, .one-third, .two-third, .three-fourth, .one-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth, .one-sixth, .five-sixth {
+  margin-right: 4%;
+  margin-bottom: 25px;
+  float: left;
+}
+
+.column-last {
+  margin-right: 0 !important;
+  clear: right;
+}
+
+/**
+ * Vertical Centering
+ */
+.verticalcenter {
+  display: table;
+}
+
+/* For IE7 */
+.verticalcenter td {
+  vertical-align: middle;
+}
+
+.verticalcenter .cell.verticalcenter {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+/**
+ * General click styling
+ */
+a:active, a:focus {
+  outline: 0;
+}
+
+/**
+ * Divider Styling
+ */
+hr {
+  margin: 10px 0 40px 0;
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-color: #e7e7e7;
+  border-color: rgba(0, 0, 0, .05);
+  height: 6px;
+}
+
+
+.single-post .post,
+.portfolio,
+.regular-width {
+  aside {
+    color: #777;
+    max-width: 150px;
+
+    &:before {
+      content: "____";
+      display: block;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      @include opacity(0.5);
+    }
+
+    img {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &.aside-left {
+      float: left;
+      margin-left: -190px;
+      text-align: right;
+    }
+
+    &.aside-right {
+      float: right;
+      margin-right: -190px;
+    }
+  }
+}

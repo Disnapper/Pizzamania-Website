@@ -1,0 +1,161 @@
+.button,
+.tw-button,
+a.tw-button,
+.struck a.tw-button,
+a.button,
+a.more-link,
+#submit,
+.tw-postshortcode a.more-link,
+.struck .tw-postshortcode a.more-link,
+input[type=submit] {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border-width:2px;
+  border-style:solid;
+  border: 2px solid;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 14px 20px;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  @include transition(background 0.3s ease 0s, color 0.3s ease 0s, border 0.3s ease 0s);
+  @include border-radius(100px);
+}
+
+a.tw-button.custom {
+  border:0 !important;
+}
+
+.button:hover,
+.tw-button:hover,
+a.tw-button:hover,
+a.button:hover,
+a.more-link:hover,
+#submit:hover,
+.tw-postshortcode a.more-link:hover,
+input[type=submit]:hover,
+.button:active,
+.tw-button:active,
+a.tw-button:active,
+a.button:active,
+a.more-link:active,
+#submit:active,
+.tw-postshortcode a.more-link:active,
+input[type=submit]:active {
+  color: #fff;
+}
+
+.section.dark-section,
+.slide.dark-section {
+  a.button.outline {
+    border: 1px solid #fff;
+    color: #fff !important;
+  }
+  a.button.outline:hover {
+    background: #fff !important;
+    color: #222 !important;
+  }
+}
+
+a.button.outline {
+  background: transparent;
+  border: 1px solid #222;
+  color: #222 !important;
+  margin-top: 0;
+  z-index: 99;
+  text-transform: uppercase;
+}
+
+a.button.outline:hover {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+.tw-button:hover,
+a.tw-button:hover,
+.widget a.tw-button:hover,
+.tw-postshortcode a.more-link:hover {
+  border-color: #222;
+}
+
+span.more-link {
+  display: block;
+}
+
+a.more-link {
+  display: inline-block;
+}
+
+a.more-link, a.button, .tw-button, a.tw-button, .button {
+  margin-top: 15px;
+}
+
+a.button.shortcode {
+  margin-top: 0 !important;
+  margin-bottom: 15px;
+}
+
+/* Button Hovers */
+.button:hover, a.button:hover, .widget a.button:hover, .cancel-reply p a:hover {
+  background: #111;
+}
+
+.button:hover, a.button:hover, #submit:hover {
+  color: #fff;
+}
+
+.button.custom:hover, a.button.custom:hover {
+  background: #000 !important;
+}
+
+/* Button Sizes */
+.button.small, .tw-button.small {
+  font-size: 10px;
+}
+
+.button.medium, .tw-button.medium {
+  font-size: 12px;
+  padding: 10px 12px 11px !important;
+}
+
+.button.large, .tw-button.large {
+  font-size: 14px;
+  padding: 12px 14px 13px !important;
+}
+
+.button.huge, .tw-button.huge {
+  font-size: 14px;
+  padding: 22px 25px !important;
+}
+
+/* Button Colors */
+.button.red, .tw-button.red {
+  background: #C60108;
+}
+
+.button.orange, .tw-button.orange {
+  background: #E97F02;
+}
+
+.button.yellow, .tw-button.yellow {
+  background: #ECBA09;
+}
+
+.button.green, .tw-button.green {
+  background: #8FBE00;
+}
+
+.button.blue, .tw-button.blue {
+  background: #00A8C6;
+}
+
+.button.purple, .tw-button.purple {
+  background: #490A3D;
+}
+
+.button.purple:hover, .tw-button.purple:hover, .button.blue:hover, .tw-button.blue:hover, .button.green:hover, .tw-button.green:hover, .button.yellow:hover, .tw-button.yellow:hover, .button.orange:hover, .tw-button.orange:hover, .button.red:hover, .tw-button.red:hover {
+  background: #333;
+}

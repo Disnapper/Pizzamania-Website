@@ -1,0 +1,672 @@
+/**
+ * Logo Image
+ */
+.logo-nav-container {
+  position: fixed;
+  top: 0;
+  z-index: 103;
+}
+
+.top-nav #logo {
+  color: #fff;
+  margin: 40px 0 0 15px;
+  width: 1px;
+  padding-left: 15px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-size: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    @include transition(color 0.5s ease);
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    a {
+      font-size: 24px;
+      line-height: 24px;
+      color: #222;
+      text-decoration: none;
+      @include transition(color 0.5s ease);
+      display: block;
+      position: relative;
+    }
+  }
+
+  // position light over the dark
+  img {
+    @include transition(opacity 0.5s ease);
+
+    &.light-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include opacity(0);
+    }
+    &.dark-logo {
+      @include opacity(1);
+    }
+  }
+}
+
+body {
+  background: none;
+}
+
+body.dark-section {
+  #logo {
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    img {
+      &.light-logo {
+        @include opacity(1);
+      }
+      &.dark-logo {
+        @include opacity(0);
+      }
+    }
+  }
+
+  .top-nav.has-background {
+    #logo img.light-logo {
+      @include opacity(0);
+    }
+    #logo img.dark-logo {
+      @include opacity(1);
+    }
+  }
+}
+
+#logo img {
+  display: block;
+}
+
+#logo img.retina {
+  max-height: 50%;
+}
+
+/**
+ * Dropdown Navigation
+ */
+/* Navigation Container */
+.top-nav {
+  position: fixed;
+  z-index: 130;
+  width: 100%;
+
+  nav#menu {
+    float: right;
+  }
+}
+
+.top-nav.regular-nav .top-nav-inner {
+  height: 100%;
+}
+
+.top-nav.regular-nav.is_stuck,
+.top-nav.altnav .altcontainer.is_stuck {
+  width: 100% !important;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+html.mm-right.mm-opened.mm-opening .mm-fixed-top {
+  left: auto !important;
+}
+
+.top-nav.regular-nav.is_stuck {
+  left: auto !important;
+}
+
+.top-nav .container {
+  position: relative;
+}
+
+.top-nav .table-cell {
+  vertical-align: middle;
+}
+
+.no-bg .top-nav {
+  position: relative;
+  background: #222;
+}
+
+/* Search in navbar */
+.top-nav .search {
+  display: inline-block;
+  position: relative;
+  min-width: 30px;
+  min-height: 37px;
+  margin-right: 5px;
+}
+
+.top-nav .search input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+  line-height: 42px;
+}
+
+.top-nav .search input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  line-height: 42px;
+}
+
+.top-nav .search input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+  line-height: 42px;
+}
+
+.top-nav .search input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+  font-size: 14px;
+  line-height: 42px;
+}
+
+.top-nav input#s {
+  font-size: 14px;
+  width: 0;
+  @include opacity(0);
+  padding: 0;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  float: right;
+  max-height: 42px;
+  height: 42px;
+  background: #e3e3e3;
+  background: rgba(0, 0, 0, 0.075);
+  color: #444;
+  position: absolute;
+  line-height: 42px;
+  right: 0;
+  padding: 0 15px;
+  @include border-radius(999px);
+}
+
+.searchnav {
+  line-height: 0;
+}
+
+.altnav .top-nav .search input#s {
+  height: 38px;
+  margin-top: 2px;
+  background: #f3f3f3;
+  background: rgba(0, 0, 0, 0.075);
+}
+
+.top-nav input#s:focus {
+  width: 200px;
+  right: 0;
+  @include opacity(1);
+}
+
+.top-nav .search:hover input#s {
+  width: 200px;
+  right: 0;
+  @include opacity(1);
+}
+
+.search i.searchbutton {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  cursor: pointer;
+  margin: 0;
+  line-height: 37px;
+  padding-right: 5px;
+}
+
+.top-nav .container .cell {
+  padding: 15px 0;
+}
+
+/**
+ * Navigation Dropdown Skin
+ */
+.sf-menu {
+  float: left;
+}
+
+.sf-menu a {
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  padding: 2em 1.25em;
+  text-decoration: none;
+}
+
+.sf-menu li {
+  margin-left: 1px;
+}
+
+.nomargin .sf-menu li {
+  margin-left: 1px;
+}
+
+.sf-menu li li, .sf-menu li li li,
+.sf-menu li li li li,
+.nomargin .sf-menu li li,
+.nomargin .sf-menu li li li,
+.nomargin .sf-menu li li li li {
+  margin-left: 0;
+}
+
+.sf-menu li a {
+  padding: 1.2em 1.4em;
+  line-height: 1em;
+}
+
+.sf-menu li li > a:hover {
+  color: #000;
+}
+
+.sf-menu li li li > a,
+.sf-menu li li:last-child li > a,
+.sf-menu li li li li > a,
+.sf-menu li li li:last-child li > a {
+  border-bottom: none;
+}
+
+.sf-menu a, .sf-menu a:visited {
+  /* visited pseudo selector so IE6 applies text colour*/
+  color: #222;
+  /* for Main nav in teal area once already clicked on */
+}
+
+.sf-menu a:hover {
+  color: #222;
+}
+
+.sf-menu li li li li a:hover,
+.sf-menu li li li a:hover,
+.sf-menu li li a:hover {
+  color: #222;
+  background: transparent;
+}
+
+.sf-menu li li a,
+.sf-menu li li a:visited,
+.sf-menu li li li a,
+.sf-menu li li li a:visited,
+.sf-menu li li li li a,
+.sf-menu li li li li a:visited,
+.sf-menu li li:last-child li a,
+.sf-menu li li li:last-child li a {
+  /* visited pseudo selector so IE6 applies text colour*/
+  color: #555;
+  /* For drop down that appears in white space once already visited */
+  font-weight: normal;
+  text-transform: none;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.sf-menu li li:last-child a, .sf-menu li li li:last-child a, .sf-menu li li li li:last-child a {
+  border-bottom: none;
+}
+
+.sf-menu li li a, .sf-menu li li li a, .sf-menu li li li a, .sf-menu li li li li a {
+  color: #555555;
+  /* text color for drop down that appears in white space */
+}
+
+.sf-menu li {
+  background: none;
+}
+
+.sf-menu li li {
+  background: none;
+}
+
+.sf-menu li li li {
+  background: none;
+}
+
+.sf-menu li li li li {
+  background: none;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+  outline: 0;
+}
+
+/* #Nav Arrows
+================================================== */
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+  padding-right: 1em;
+}
+
+.sf-menu > li.sfHover > a,
+.sf-menu li > a:hover {
+  color: #000;
+}
+
+.dark-section .sf-menu > li.sfHover > a,
+.dark-section .sf-menu > li > a:hover {
+  color: #fff;
+}
+
+.sf-menu li.sfHover li > a {
+  background: none;
+}
+
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -0.5em;
+  margin-top: -3px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  border: 5px solid transparent;
+  border-top-color: #ccc;
+  /* edit this to suit design (no rgba in IE8) */
+}
+
+.fontface .sf-arrows .sf-with-ul:after {
+  content: '\f107';
+  font-family: 'FontAwesome', sans-serif;
+  @include opacity(0.5);
+  padding-right: 4px;
+  padding-left: 2px;
+  top: 0;
+  position: relative;
+  border: none;
+  font-weight: normal;
+}
+
+.fontface .sf-arrows > li > .sf-with-ul:focus:after,
+.fontface .sf-arrows > li:hover > .sf-with-ul:after,
+.fontface .sf-arrows > .sfHover > .sf-with-ul:after {
+  text-decoration: none;
+}
+
+.fontface .sf-arrows a.sf-with-ul:hover {
+  text-decoration: none;
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+  border-top-color: #ccc;
+  /* IE8 fallback colour */
+}
+
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+  margin-top: -5px;
+  margin-right: 12px;
+  border-color: transparent;
+  border-left-color: #ccc;
+  /* edit this to suit design (no rgba in IE8) */
+  border-left-color: rgba(0, 0, 0, 0.1);
+}
+
+.fontface .sf-arrows ul .sf-with-ul:after {
+  content: '\f105';
+  padding-left: 5px;
+}
+
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+  border-left-color: #ccc;
+}
+
+.fontface .sf-arrows ul li > .sf-with-ul:focus:after,
+.fontface .sf-arrows ul li:hover > .sf-with-ul:after,
+.fontface .sf-arrows ul .sfHover > .sf-with-ul:after {
+  text-decoration: none;
+}
+
+.sf-shadow ul {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sf-shadow ul.sf-shadow-off {
+  background: transparent;
+}
+
+/* Section colors */
+body.dark-section .sf-menu > li > a {
+  color: #fff;
+}
+
+.top-nav {
+  @include transition(background 0.5s ease, padding 0.5s ease);
+
+  .sf-menu > li > a {
+    @include opacity(0.6);
+  }
+  &.has-background {
+    background: #fff;
+    padding: 10px 0;
+  }
+  .sf-menu > li > a:hover {
+    @include opacity(1);
+  }
+}
+
+body.dark-section .top-nav.has-background {
+  background: #fff;
+
+  // make it white again
+  .sf-menu > li > a,
+  .social a {
+    color: #222;
+  }
+
+  #logo {
+    h1, h2, h3, h4, h5, h6 {
+      color: #222;
+
+      a {
+        color: #222;
+      }
+    }
+  }
+
+}
+
+.navcontainer {
+  z-index: 10;
+}
+
+.tw-menu-icon span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-top: -2px;
+  background-color: #000;
+  font-size: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tw-menu-icon.closeout span,
+.dark-section .tw-menu-icon.closeout span {
+  background-color: transparent !important;
+}
+
+.tw-menu-icon span:before,
+.tw-menu-icon span:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: " ";
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+
+  -webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+
+}
+
+.tw-menu-icon:hover span:before {
+  @include transform(translateY(-10px));
+}
+
+.tw-menu-icon:hover span:after {
+  @include transform(translateY(10px));
+}
+
+.tw-menu-icon.closeout span:before {
+  @include transform(translateY(0) rotate(45deg));
+}
+
+.tw-menu-icon.closeout span:after {
+  @include transform(translateY(0) rotate(-45deg));
+}
+
+.tw-menu-icon span:before {
+  @include transform(translateY(-8px));
+}
+
+.tw-menu-icon span:after {
+  @include transform(translateY(8px));
+}
+
+.tw-menu-icon {
+  color: #222;
+  text-align: right;
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 102;
+  width: 30px;
+  height: 50px;
+  margin: 0 15px 0 20px;
+  @include transition(none);
+}
+
+.no-csstransforms {
+
+  .tw-menu-icon {
+
+    span {
+      background: none !important;
+      height: 30px;
+      margin-top: -15px;
+      color: #000;
+
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        font-family: "FontAwesome";
+        content: "\f0c9";
+        background: none !important;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        transform: none !important;
+
+      }
+    }
+
+    &:hover span:before {
+      transform: none !important;
+    }
+
+    // just in case
+    &:hover {
+      span {
+        color: #000;
+      }
+      span:before {
+        transform: none !important;
+      }
+      span:after {
+        transform: none !important;
+      }
+    }
+  }
+
+  .dark-section .tw-menu-icon {
+    span {
+      color: #fff
+    }
+    &:hover span {
+      color: #fff;
+    }
+  }
+}
+
+.navcontainer {
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+#top-menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body.dark-section {
+  .tw-menu-icon span {
+    background-color: #fff;
+
+    &:hover,
+    &:before,
+    &:after {
+      background-color: #fff;
+    }
+  }
+}
+
+.top-nav.has-background {
+  .tw-menu-icon span {
+    background-color: #000;
+
+    &:hover,
+    &:before,
+    &:after {
+      background-color: #000;
+    }
+  }
+}
+
+#popoutmenu {
+
+  &.mm-menu.mm-current {
+    display: block;
+  }
+}
+
+/* Admin bar additions */
+.admin-bar #mobilemenu {
+  margin-top: 32px;
+}
