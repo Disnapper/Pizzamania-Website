@@ -1,0 +1,334 @@
+/* Width smaller than 1500px */
+.show-mobile {
+  display: none;
+}
+
+.show-desktop {
+  display: block;
+}
+
+/**
+ * Beta, not currently in use
+ * Will provide full width fullpage sections
+ * Current Conflicts: Arrows on slides
+ */
+/*
+@media only screen and (min-width: 1400px) {
+	.fullpage-showing {
+		.top-nav {
+			padding:50px;
+
+			.container {
+				width:100%;
+			}
+		}
+
+		.layout-center .text-cell {
+			margin: auto;
+			float: none;
+		}
+
+		#fullpage .container {
+			width:100%;
+			padding-left:65px;
+			padding-right:65px;
+
+			.text-cell, .image-cell {
+				max-width:700px;
+			}
+		}
+	}
+}
+*/
+
+/* Adjust slide arrows */
+@media only screen and (max-width: 1350px) and (min-width: 1200px) {
+  .has-arrows #fp-nav.right {
+    right: 0;
+  }
+  .fp-controlArrow.fp-next {
+    right: 10px;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 10px;
+  }
+}
+
+/* Adjust slide arrows */
+@media only screen and (max-width: 1075px) and (min-width: 992px) {
+  .has-arrows #fp-nav.right {
+    right: 0;
+  }
+  .fp-controlArrow.fp-next {
+    right: 10px;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 10px;
+  }
+}
+
+/* Widths smaller than 1199 */
+@media only screen and (max-width: 1199px) {
+
+  /* Asides */
+  .single-post .post,
+  .single-portfolio .portfolio,
+  .regular-width {
+    aside {
+      $width: 120px;
+      $margin: -156px;
+
+      &.aside-left {
+        max-width: $width;
+        margin-left: $margin;
+      }
+      &.aside-right {
+        max-width: $width;
+        margin-right: $margin;
+      }
+    }
+  }
+
+  /* Disable for touch devices at this size */
+  .full-bg-image {
+    background-attachment: scroll !important;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    background-position: 50% 50% !important;
+  }
+
+  .container.with-sidebar {
+    .content {
+      width: 608px;
+    }
+  }
+}
+
+/* Widths between 992px and 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Widths between less than 991px */
+@media only screen and (max-width: 991px) {
+
+  #footer {
+    .right-footer,
+    .left-footer,
+    .center-footer {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .single-post .post,
+  .single-portfolio .portfolio,
+  .regular-width {
+
+    aside {
+
+      &.aside-left,
+      &.aside-right {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+        text-align: center;
+        max-width: 480px;
+        margin-bottom: 40px;
+
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+    }
+
+  }
+
+  .container.with-sidebar {
+    .content {
+      margin-right: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+    .sidebar {
+      position: relative;
+      right: auto;
+      top: auto;
+      width: 100%;
+    }
+  }
+
+  /* vertical layout for text-image sections */
+  .section-entry.table,
+  .text-image-wrapper.tr,
+  .text-cell.td,
+  .image-cell.td {
+    display: block;
+  }
+  .layout-left .image-cell {
+    margin-top: 30px;
+  }
+  .layout-right .image-cell {
+    margin-bottom: 30px;
+  }
+
+  /* Hide Fullpage Nav Buttons at this size */
+  #fp-nav {
+    display: none;
+  }
+  /* Adjust control arrows */
+  .fp-controlArrow.fp-next {
+    right: 0;
+    width: 40px;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 0;
+    width: 40px;
+  }
+
+  // move top menu items to mobile
+  .show-mobile {
+    display: block;
+  }
+  .show-desktop {
+    display: none;
+  }
+
+  /* Footer */
+  #footer {
+    .one-third {
+      width: 100%;
+    }
+  }
+
+  /* Inputs */
+  input#s, .search-form {
+    max-width: none;
+  }
+
+}
+
+@media screen and (max-width: 782px) {
+  .admin-bar #mobilemenu {
+    margin-top: 46px;
+  }
+  #tw-mobile-indicator {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  // remove padding because nav dots are gone
+  #fullpage .section .section-entry {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Comments */
+  .singlecomment {
+    margin-left: 0;
+  }
+  .comment .avatar {
+    display: none;
+  }
+  .singlecomment .comment-content {
+    margin-left: 0;
+  }
+  .listcomments .children {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media screen and (max-width: 767px) {
+
+  /* Gallery Sizes */
+  .single-gallery {
+
+    .gallery-columns-1,
+    .gallery-columns-2,
+    .gallery-columns-3,
+    .gallery-columns-4,
+    .gallery-columns-5,
+    .gallery-columns-6,
+    .gallery-columns-7,
+    .gallery-columns-8,
+    .gallery-columns-9 {
+      .gallery-item {
+        width: 48%;
+        margin: 0.5% 1%;
+      }
+      .gallery-item .gallery-caption {
+        display: block;
+        span {
+          padding: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+  .nextbutton {
+    bottom: 20px !important;
+  }
+
+  // smaller slimscroll to match mobile devices
+  .slimScrollBar {
+    width: 5px !important;
+  }
+
+  /* Font size adjustments */
+  .title, .intro {
+    font-size: 70%;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .tiny-details {
+    font-size: 90%;
+  }
+
+  /* Gallery Sizes */
+  .single-gallery {
+    .gallery-columns-1,
+    .gallery-columns-2,
+    .gallery-columns-3,
+    .gallery-columns-4,
+    .gallery-columns-5,
+    .gallery-columns-6,
+    .gallery-columns-7,
+    .gallery-columns-8,
+    .gallery-columns-9 {
+      .gallery-item .gallery-caption {
+        display: none;
+      }
+    }
+  }
+
+  /* Sharing */
+  #share-box {
+    i {
+      font-size: 52px;
+      margin: 0 2px;
+    }
+  }
+}

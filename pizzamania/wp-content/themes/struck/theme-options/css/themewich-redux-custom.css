@@ -1,0 +1,17 @@
+/* Custom CSS for Redux panel */
+#tw_options-ajax-loading-image label {
+	width: 30px !important;
+	height: 30px !important;
+	padding: 20px;
+	display: block;
+}
+#tw_options-ajax-loading-image label img {
+	display:block;
+	padding:10px;
+	max-width:30px !important;
+	max-height:30px !important;
+	border-color: transparent;
+}
+#tw_options-ajax-loading-image label.redux-image-select-selected img {
+	border-color:#000;
+}

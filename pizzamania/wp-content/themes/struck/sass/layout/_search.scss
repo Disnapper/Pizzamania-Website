@@ -1,0 +1,38 @@
+/* Search Results */
+.search-results {
+  .search-list {
+    counter-reset: themewich-counter;
+  }
+  .search-item {
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 30px;
+  }
+  .search-list .search-item:before {
+    content: counter(themewich-counter);
+    counter-increment: themewich-counter;
+    font-size: 32px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: block;
+    padding: 0;
+    text-align: center;
+    float: left;
+    margin-left: -56px;
+    margin-top: -3px;
+    color: #dcdcdc;
+  }
+  .regulargrid .regularwrapper {
+    margin: 0;
+  }
+}
+
+.search-form {
+  max-width: 300px;
+}
+
+.error404 .search-form {
+  margin: auto;
+}

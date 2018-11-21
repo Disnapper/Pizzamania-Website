@@ -1,0 +1,83 @@
+.widget_nav_menu a, .widget_rss a, .widget_recent_entries a {
+  -moz-transition: height .25s, line-height .25s, background .25s, visibility .25s;
+  -ms-transition: height .25s, line-height .25s, background .25s, visibility .25s;
+  -o-transition: height .25s, line-height .25s, background .25s, visibility .25s;
+  -webkit-transition: height .25s, line-height .25s, background .25s, visibility .25s;
+  transition: height .25s, line-height .25s, background .25s, visibility .25s;
+}
+
+.widget_nav_menu ul, .widget_nav_menu ul li, .widget_recent_entries ul, .widget_recent_entries ul li {
+  list-style: none;
+  margin: 0;
+}
+
+.widget_recent_entries span.post-date {
+  display: none;
+}
+
+.widget_nav_menu ul ul, .widget_recent_entries ul ul {
+  margin: 0;
+}
+
+.widget_nav_menu ul, .widget_recent_entries ul {
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.widget .menu, .widget_recent_entries ul {
+  margin-top: -18px;
+  padding: 0;
+}
+
+.widget_nav_menu a, .widget_recent_entries a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  border-bottom: 1px dotted #dcdcdc;
+  border-color: rgba(0, 0, 0, .15);
+  text-align: left;
+  height: auto;
+  overflow: hidden;
+  padding: 12px 5px 12px 10px;
+  z-index: 1000;
+  color: #555;
+  line-height: 18px;
+  font-size: 14px;
+  background: url(images/rightarrow.png) 95% 48% no-repeat;
+}
+
+.widget.widget_nav_menu a:hover, .widget.widget_recent_entries a:hover {
+  color: #222;
+}
+
+.dark .widget.widget_nav_menu a:hover, .dark .widget.widget_recent_entries a:hover {
+  color: #fff;
+}
+
+.dark .widget_nav_menu a, .dark .widget_recent_entries a {
+  color: #fff;
+  background: url(images/rightarrow-dark.png) 95% 48% no-repeat;
+  border-bottom: 1px dotted #444;
+}
+
+.widget_recent_entries a {
+  padding: 14px 25px 14px 5px;
+}
+
+.widget_nav_menu a:hover, .widget_recent_entries a:hover {
+  background: #f9f9f9 url(images/rightarrow.png) 97% 48% no-repeat;
+  background-color: rgba(0, 0, 0, .05);
+  color: #333;
+}
+
+.dark .widget_nav_menu a:hover, .dark .widget_recent_entries a:hover {
+  background: #333 url(images/rightarrow-dark.png) 97% 48% no-repeat;
+  color: #fff;
+}
+
+.widget_nav_menu li li a, .widget_nav_menu li li li a {
+  padding-left: 25px;
+}

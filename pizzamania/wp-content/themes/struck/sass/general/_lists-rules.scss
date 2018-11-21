@@ -1,0 +1,150 @@
+/**
+ * List Items
+ */
+ul, ol, dl, pre, table {
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none outside;
+}
+
+ol {
+  list-style: decimal;
+}
+
+.struck dt {
+  font-weight:bold;
+}
+
+ol, ul.square, ul.circle, ul.disc {
+  margin-left: 30px;
+}
+
+ul.square {
+  list-style: square outside;
+}
+
+ul.circle {
+  list-style: circle outside;
+}
+
+ul.disc {
+  list-style: disc outside;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin: 4px 0 5px 30px;
+}
+
+ul ul li, ul ol li, ol ol li, ol ul li {
+  margin-bottom: 6px;
+}
+
+ul ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li, dd {
+  margin-bottom: 12px;
+}
+
+/* Horizontal Rule */
+hr {
+  border-style: solid;
+  border-color: #dcdcdc;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 0 0 20px 0;
+  padding: 0;
+  height: 1px;
+
+  .content & {
+    margin-bottom:40px;
+  }
+}
+
+.generatedcontent .content {
+  ol,
+  span ol {
+    counter-reset: themewich-counter;
+    list-style: none;
+    padding: 0;
+    margin-left: 24px;
+
+    > li {
+      padding-left: 15px;
+    }
+    > li:before {
+      content: counter(themewich-counter);
+      counter-increment: themewich-counter;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: block;
+      padding: 0;
+      text-align: center;
+      float: left;
+      margin-left: -50px;
+      margin-top: -6px;
+      color: #ccc;
+      font-size: 22px;
+    }
+  }
+
+  ul,
+  span ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+
+    > li {
+      list-style-type: none;
+      padding-left: 15px;
+    }
+    > li:before {
+      font-family: 'FontAwesome', sans-serif;
+      content: "\f111";
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: block;
+      padding: 0;
+      text-align: center;
+      float: left;
+      margin-left: -50px;
+      margin-top: -6px;
+      color: #ccc;
+      font-size: 12px;
+    }
+  }
+
+  ol[class], ul[class] {
+    padding: 0;
+    margin: 0;
+    counter-reset: inherit;
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  ol.listcomments {
+    margin-left: 0;
+
+    li {
+      padding-left: 0;
+    }
+    li:before {
+      display: none;
+    }
+  }
+}
+
+th, tfoot td, dt {
+  color:#000;
+}

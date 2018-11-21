@@ -1,0 +1,153 @@
+.themewich-dialog-box {
+	padding: 10px;
+}
+.themewich-dialog-box div { 
+	padding: 5px 0; 
+}
+.themewich-dialog-box label { 
+	display: block; 
+	float: left; 
+	margin: 12px 8px 0 0; 
+	width: 80px; 
+}
+.themewich-dialog-box select, 
+.themewich-dialog-box input { 
+	display: block; float: right; 
+	width: 100px; 
+	padding: 7px 10px;
+	font-size:12px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.themewich-dialog-box textarea {
+	padding: 7px 10px;
+	font-size:12px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.themewich-dialog-box select { 
+	width: 122px; 
+}
+.themewich-dialog-box #insert { 
+	display: block;
+	line-height: 24px;
+	text-align: center;
+	margin: 10px 0 0 0;
+	float: right;
+	width: auto;
+	padding: 5px 15px;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #21759b;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#2a95c5),to(#21759b));
+	background-image: -webkit-linear-gradient(top,#2a95c5,#21759b);
+	background-image: -moz-linear-gradient(top,#2a95c5,#21759b);
+	background-image: -ms-linear-gradient(top,#2a95c5,#21759b);
+	background-image: -o-linear-gradient(top,#2a95c5,#21759b);
+	background-image: linear-gradient(to bottom,#2a95c5,#21759b);
+	border-color: #21759b;
+	border-bottom-color: #1e6a8d;
+	-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.5);
+	box-shadow: inset 0 1px 0 rgba(120,200,230,0.5);
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	margin-bottom: 5px;
+	height:auto;
+
+}
+.themewich-dialog-box #insert:hover {
+	background-color: #278ab7;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#2e9fd2),to(#21759b));
+	background-image: -webkit-linear-gradient(top,#2e9fd2,#21759b);
+	background-image: -moz-linear-gradient(top,#2e9fd2,#21759b);
+	background-image: -ms-linear-gradient(top,#2e9fd2,#21759b);
+	background-image: -o-linear-gradient(top,#2e9fd2,#21759b);
+	background-image: linear-gradient(to bottom,#2e9fd2,#21759b);
+	border-color: #1b607f;
+	-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+	box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+.themewich-dialog-box .full { 
+	width:90%; 
+	margin-bottom:10px;
+	float:left;
+}
+.themewich-dialog-box input.full { 
+	width:88%; 
+}
+.themewich-dialog-box label.full { 
+	margin-bottom:5px; 
+	margin-top:0;
+}
+.themewich-dialog-box a.addlink { 
+	display:block; 
+	margin-bottom:20px;
+	text-align:center;
+	color: #21759b;
+}
+.themewich-dialog-box a.addlink:hover {
+	color: #D54E21;
+}
+.themewich-dialog-box span.dialog-section span.section{ 
+	display: block;
+	background: #ffffff;
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#ffffff),to(#f9f9f9));
+	background-image: -webkit-linear-gradient(bottom,#ffffff,#f9f9f9);
+	background-image: -moz-linear-gradient(bottom,#ffffff,#f9f9f9);
+	background-image: -o-linear-gradient(bottom,#ffffff,#f9f9f9);
+	background-image: linear-gradient(to top,#ffffff,#f9f9f9);
+	padding: 8px 18px;
+	margin-bottom: 10px;
+	border: 1px solid #dcdcdc;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.themewich-dialog-box span.dialog-section h3 {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	padding: 10px 12px;
+	margin: 0;
+	line-height: 1;
+	color: #fff;
+	background: #222;
+	font-weight:normal;
+}
+a.remover {
+	display:block;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.feature-section {
+	display: block;
+	background: #e9e9e9;
+	padding: 10px 10px 0 10px;
+	width: 90%;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.themewich-dialog-box .feature-section input.full {
+	width:85%;
+}
+.themewich-dialog-box .feature-section a.addlink {
+	margin-bottom:0;
+}
+.themewich-dialog-box .feature-section a.remover {
+	margin-top: 8px;
+	margin-right: 8px;
+	color: #000;
+}
+.themewich-dialog-box.wider select {
+	width: 75%;
+	margin-bottom: 10px;
+}

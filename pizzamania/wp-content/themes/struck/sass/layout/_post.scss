@@ -1,0 +1,65 @@
+/**
+ * General Post Styles
+ */
+.single-post .post {
+
+  .image-title-bg {
+    text-align: center;
+    position: relative;
+
+    .title {
+      margin-bottom: 30px;
+    }
+    .post-details {
+      font-size: 14px;
+      color: #000;
+
+      a, a:hover {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    span {
+      @include opacity(0.65);
+
+      span {
+        @include opacity(1);
+      }
+
+      &:hover {
+        @include opacity(1);
+      }
+    }
+  }
+
+  /* Has Image */
+  &.has-image .image-title-bg {
+    .badges a {
+      border-color: #fff;
+      color: #fff;
+
+      &:hover {
+        color: #000;
+        background: #fff;
+      }
+    }
+
+    .date {
+      color: #fff;
+    }
+
+    .post-details {
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .tags {
+    margin-bottom: 50px;
+    float: left;
+    margin-top: 3px;
+  }
+}

@@ -1,0 +1,103 @@
+{
+    "key": "group_54c98ffb8e67d",
+    "title": "Portfolio Title Options",
+    "fields": [
+        {
+            "key": "field_54c9902f1d327",
+            "label": "Show Title",
+            "name": "show_title",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "Turn on off the title for this portfolio item.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        },
+        {
+            "key": "field_54c990141d326",
+            "label": "Subheadline",
+            "name": "subheadline",
+            "prefix": "",
+            "type": "text",
+            "instructions": "(Optional) Appears above the title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54d4da9f0cc32",
+            "label": "Title Area Background Image",
+            "name": "background_image",
+            "prefix": "",
+            "type": "image",
+            "instructions": "Image that will appear behind the background",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all"
+        },
+        {
+            "key": "field_54c98ffb96ffa",
+            "label": "Intro Text",
+            "name": "intro_text",
+            "prefix": "",
+            "type": "text",
+            "instructions": "(Optional) Write an intro for your post. It will be displayed above your content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "(optional)",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "custom_fields"
+    ],
+    "modified": 1423252813
+}

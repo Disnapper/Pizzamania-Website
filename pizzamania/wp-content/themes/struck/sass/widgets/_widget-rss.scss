@@ -1,0 +1,61 @@
+ul li a.rsswidget {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+a.rsswidget img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+span.rss-date {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.rssSummary {
+  margin-bottom: 10px;
+}
+
+.widget.widget_rss .widget-title {
+  border: none;
+}
+
+.widget ul ul {
+  margin: 0;
+  font-size: 100%;
+}
+
+.widget ul {
+  padding: 0; // remove bootstrap styling
+}
+
+.widget_rss ul {
+  margin-top: -10px;
+}
+
+.widget_rss ul li {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #dcdcdc;
+  border-color: rgba(0, 0, 0, .15);
+  width: auto;
+  padding: 15px 0 5px 0;
+}
+
+.dark .widget_rss ul li {
+  border-color: #555;
+}
+
+.dark .widget_rss a.rsswidget {
+  color: #fff;
+}
+
+.widget_rss cite, span.rss-date {
+  font-size: 10px;
+  color: #999;
+}

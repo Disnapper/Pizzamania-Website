@@ -1,0 +1,15 @@
+/*
+  Slide Out Panel CSS
+*/
+.tw-slide-panel {
+  font-size: 12px;
+
+  .tw-slide-menu a {
+    @include transition(none);
+    color: #888;
+  }
+
+  p, ul, ol {
+    font-size: 12px;
+  }
+}

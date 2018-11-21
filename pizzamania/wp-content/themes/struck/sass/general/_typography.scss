@@ -1,0 +1,115 @@
+/* Default Body */
+body {
+  font-size: 16px;
+  line-height: 2em;
+  color: #777;
+  overflow-x: hidden;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  /* Chrome and Safari */
+  -moz-backface-visibility: visible;
+  /* Firefox */
+  -ms-backface-visibility: visible;
+  /* Internet Explorer */
+}
+
+p, ul {
+  font-size: 16px;
+  line-height: 1.9em;
+  margin-bottom: 3em;
+  margin-top: 0;
+  color: #777;
+}
+
+/* Link Transitions */
+p a, a {
+  text-decoration: none;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a:active, a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* Headings */
+h1 {
+  padding: 0;
+  margin: 0 0 0.75em;
+  color: #000;
+}
+
+h2 {
+  padding: 0;
+  margin: 0 0 0.75em;
+  color: #000;
+}
+
+h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0 0 1em;
+  color: #000;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Site Wide Specifics
+ */
+p img {
+  margin: 0;
+}
+
+p.lead {
+  font-size: 21px;
+  line-height: 27px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+.tinydetails {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section.dark-section .tinydetails {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.intro h2 {
+  font-size: 1.75em;
+  line-height: 1.3em;
+  margin-bottom: 60px;
+  color: #777;
+}

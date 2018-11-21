@@ -1,0 +1,55 @@
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+
+.top a, .top a:hover {
+  text-decoration: none;
+  display: block;
+  color: #777;
+}
+
+.top .scrolltop {
+  @include opacity(0.75);
+  display: block;
+  border: 1px solid transparent;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.top .scrolltop span {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  padding: 6px 7px 6px 28px;
+  margin-bottom: 0;
+}
+
+.top .scrolltop span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  margin-top: -8px;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #777;
+}
+
+.top a:hover .scrolltop {
+  display: block;
+  @include opacity(0.95);
+  border-color: #dcdcdc;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}

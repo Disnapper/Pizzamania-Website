@@ -1,0 +1,265 @@
+/* Comments */
+.commentwrapper {
+  padding: 50px 0 0 0;
+  padding-bottom: 15px;
+  background: #f6f6f6;
+  background: rgba(0, 0, 0, 0.025);
+  text-align: left;
+}
+
+.commentsheader {
+  width: auto;
+
+  h3 {
+    display: inline-block;
+  }
+  .badges {
+    margin-left: 5px;
+  }
+  .badges a {
+    vertical-align: middle;
+    padding: 15px 12px;
+  }
+}
+
+span.respond-link a {
+  float: right;
+  color: #000;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin-top: -5px;
+  line-height: 32px;
+  font-size: 12px;
+  @include opacity(0.5);
+
+  &:hover {
+    color: #fff;
+    background: #000;
+    @include opacity(1);
+  }
+
+  i {
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+
+.commentsheader h4, .commentsform h4 {
+  font-weight: bold;
+}
+
+.comment {
+  width: auto;
+}
+
+.singlecomment {
+  //border-bottom: 2px solid #e9e9e9;
+  padding: 35px 25px;
+
+  .comment-content {
+    margin-left: 85px;
+    position: relative;
+  }
+}
+
+.comment .avatar {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 99px;
+  float: left;
+}
+
+.listcomments {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+  width: auto;
+}
+
+.commentsform {
+  width: auto;
+}
+
+.singlecomment p.commentsmetadata {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 20px;
+
+  i {
+    margin-right: 5px;
+  }
+
+  cite {
+    text-transform: none;
+    letter-spacing: 0;
+  }
+}
+
+.singlecomment .author {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.singlecomment .name {
+  font-size: 14px;
+  padding: 0 5px 0 0;
+  margin-right: 5px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.singlecomment p {
+  color: #777;
+  margin-bottom: 1em;
+}
+
+.commenttext {
+  margin-bottom: 30px;
+}
+
+.name a, .name {
+  font-weight: bold;
+  color: #333;
+}
+
+.name a:hover {
+  text-decoration: none;
+}
+
+.name strong {
+  font-weight: normal;
+}
+
+.listcomments .children .name {
+  font-weight: bold;
+}
+
+.listcomments .children {
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.listcomments li {
+  list-style-type: none;
+}
+
+.listcomments .children .comment {
+  margin: 30px 0 0 0px;
+  padding: 0;
+  background: none;
+}
+
+#commentsubmit span {
+  color: #c85849;
+}
+
+#commentsubmit label {
+  display: block;
+  font-size: 12px;
+}
+
+#commentsubmit input[type=text], #commentsubmit textarea {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border: none;
+  background: #e3e3e3;
+  background: rgba(100, 100, 100, 0.09);
+}
+
+input[type=email] {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 3px;
+}
+
+form.mc4wp-form label[for="mc4wp_email"] {
+  display: none;
+}
+
+form.mc4wp-form input[type="submit"],
+div.mc4wp-form button[type="submit"] {
+  background: #74953a;
+}
+
+#commentsubmit input[type=text] {
+  width: 275px;
+}
+
+#commentsubmit input[type=text]#url {
+  width: 95%;
+}
+
+#commentsubmit textarea {
+  width: 100%;
+}
+
+.reply a {
+  font-size: 12px;
+  line-height: 11px;
+  color: #222;
+}
+
+#reply-title {
+  text-align: right;
+  float: right;
+}
+
+#respond {
+  padding-top: 20px;
+}
+
+#commentsubmit input:focus, #commentsubmit textarea:focus {
+  border-style: solid;
+  border: none;
+  background: #e9e9e9;
+  background: rgba(100, 100, 100, 0.15);
+  outline: 0;
+}
+
+.gallery-title {
+  font-size: 1.08em;
+  text-transform: uppercase;
+}
+
+.navigation-comments p a {
+  padding: 5px 12px;
+  background: #555;
+  color: #fff;
+}
+
+#cancel-comment-reply-link {
+  float: right;
+  font-size: 22px;
+  line-height: 22px;
+  display: inline-block;
+}
+
+a.comment-reply-link .icon-reply {
+  font-size: 11px;
+  color: #999;
+  @include opacity(0);
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+a.comment-reply-link:hover .icon-reply {
+  @include opacity(1);
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(4px);
+}

@@ -1,0 +1,89 @@
+/**
+ * Image Styles
+ */
+
+/* Image Alignment */
+img.alignright, .wp-caption.alignright {
+  float: right;
+  margin: 5px 0 30px 30px;
+}
+
+img.alignleft, .wp-caption.alignleft {
+  float: left;
+  margin: 5px 30px 30px 0;
+}
+
+img.aligncenter, .wp-caption.aligncenter {
+  margin: 40px auto 30px;
+}
+
+/**
+ * Parallax-Style Image
+ */
+.post-break {
+  position: relative;
+  float: none;
+  margin: 40px auto 40px;
+  display: inline-block;
+  line-height: 0;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  -webkit-backface-visibility: hidden !important;
+}
+
+.full-bg-image {
+  display: block;
+  position: relative;
+  padding-left: 100%;
+  margin-left: -100%;
+  padding-right: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden !important;
+  background-position: center;
+  background-attachment: scroll;
+  background-color: #222;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  padding-bottom: 70%;
+}
+
+.imagecover .full-bg-image {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* Loading */
+img.alignfull {
+  display: none;
+}
+
+.no-js img.alignfull {
+  display: block;
+}
+
+/* Fade in Background images on load */
+.load-background-image {
+  background-position:center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  opacity:0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  @include transition(opacity 2s ease);
+
+  &.fade-in {
+    opacity:1;
+  }
+}

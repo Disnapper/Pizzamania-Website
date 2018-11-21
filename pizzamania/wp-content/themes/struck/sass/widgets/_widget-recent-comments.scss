@@ -1,0 +1,86 @@
+.widget #recentcomments {
+  padding: 0;
+}
+
+.widget li.recentcomments {
+  font-size: 12px;
+  width: auto;
+  position: relative;
+  bottom: 100%;
+  margin: 0 0 26px 0;
+  /*25px for ie */
+  padding: 12px;
+  cursor: default;
+  display: block;
+  visibility: visible;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  line-height: 1.5;
+  @include opacity(1);
+  z-index: 1;
+  left: auto;
+  transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.dark .widget li.recentcomments {
+  background: #111;
+  background: rgba(0, 0, 0, .25);
+  color: #dcdcdc !important;
+}
+
+.widget li.recentcomments {
+  background: #e3e3e3;
+  background: rgba(0, 0, 0, .05);
+}
+
+.widget li.recentcomments:after {
+  content: "";
+  position: absolute !important;
+  bottom: -14px;
+  z-index: 100;
+  border: 0 solid #e3e3e3;
+  border-color: rgba(0, 0, 0, .05);
+  border-bottom: 14px solid transparent;
+  width: 100%;
+  border-left-width: 14px;
+  left: 0;
+}
+
+.widget li.recentcomments:before {
+  content: "";
+  position: absolute !important;
+  border: 0 solid #e3e3e3;
+  border: 0 solid rgba(0, 0, 0, .05);
+  bottom: -14px;
+  z-index: 100;
+}
+
+.dark .widget li.recentcomments:after {
+  content: "";
+  position: absolute !important;
+  bottom: -14px;
+  z-index: 100;
+  border: 0 solid #111;
+  border: 0 solid rgba(0, 0, 0, .25);
+  border-bottom: 14px solid transparent;
+  width: 100%;
+  border-left-width: 14px;
+  left: 0;
+}
+
+.dark .widget li.recentcomments:before {
+  content: "";
+  position: absolute !important;
+  border: 0 solid #111;
+  border: 0 solid rgba(0, 0, 0, .25);
+  bottom: -14px;
+  z-index: 100;
+}
+
+.dark .recentcomments a {
+  color: #fff;
+}

@@ -1,0 +1,191 @@
+/* Toggle Checkboxes by Schoberg.net */
+div.tog{
+	display:block;
+	height:34px;
+	width:80px;
+	position:relative;
+	cursor:pointer;
+	font-size:26px;
+	line-height:12px;
+	font-family: 'dashicons';
+	background:#ccc;
+
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+div.tog:after{
+	content:'';
+	display:block;
+	height:24px;
+	width:30px;
+	background:#fff;
+	position:absolute;
+	top:5px;
+	left:5px;
+
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+div.tog:before{
+	content: "\f335";
+	position:absolute;
+	right:11px;
+	top:12px;
+	color:#fff;
+}
+div.tog:hover:after{
+	left:10px;
+}
+div.tog.on:before{
+	content: "\f147";
+	right:50px;
+}
+div.tog.on{
+	background:#2ea2cc;
+}
+div.tog.on:after{
+	left:45px;
+}
+div.tog.on:hover:after{
+	left:40px;
+}
+
+/* Light fresh theme */
+.admin-color-fresh div.tog.on {
+	background: #0074a2;
+}
+/* Light admin theme */
+.admin-color-light div.tog.on {
+	background: #04a4cc;
+}
+/* Blue admin theme */
+.admin-color-blue div.tog.on {
+	background: #4796b3;
+}
+/* Coffee admin theme */
+.admin-color-coffee div.tog.on {
+	background: #c7a589;
+}
+/* Ectoplasm admin theme */
+.admin-color-ectoplasm div.tog.on {
+	background: #a3b745;
+}
+/* Midnight admin theme */
+.admin-color-midnight div.tog.on {
+	background: #e14d43;
+}
+/* Ocean admin theme */
+.admin-color-ocean div.tog.on {
+	background: #9ebaa0;
+}
+/* Sunrise admin theme */
+.admin-color-sunrise div.tog.on {
+	background: #dd823b;
+}
+
+/** Set minimum height */
+.layout[data-layout="text-image"] table.acf-table {
+    min-height:240px;
+}
+.layout[data-layout="text-image-slides"] table.acf-table td.acf-fields {
+	height:240px;
+}
+.acf-field[data-name="buttons"] table.acf-table{
+	min-height:0;
+}
+
+img.radio-select-img-item {
+	border:3px solid #e3e3e3;
+	padding:1px;
+}
+img.radio-select-img-item.item-checked {
+	border-color:#000;
+}
+
+/* Light fresh theme */
+.admin-color-fresh img.radio-select-img-item.item-checked {
+	border-color: #0074a2;
+}
+/* Light admin theme */
+.admin-color-light img.radio-select-img-item.item-checked {
+	border-color: #04a4cc;
+}
+/* Blue admin theme */
+.admin-color-blue img.radio-select-img-item.item-checked {
+	border-color: #4796b3;
+}
+/* Coffee admin theme */
+.admin-color-coffee img.radio-select-img-item.item-checked {
+	border-color: #c7a589;
+}
+/* Ectoplasm admin theme */
+.admin-color-ectoplasm img.radio-select-img-item.item-checked {
+	border-color: #a3b745;
+}
+/* Midnight admin theme */
+.admin-color-midnight img.radio-select-img-item.item-checked {
+	border-color: #e14d43;
+}
+/* Ocean admin theme */
+.admin-color-ocean img.radio-select-img-item.item-checked {
+	border-color: #9ebaa0;
+}
+/* Sunrise admin theme */
+.admin-color-sunrise img.radio-select-img-item.item-checked {
+	border-color: #dd823b;
+}
+
+
+/** Alterations to Collapser (if used) */
+.field_type-flexible_content .layout.row-layout {
+	padding-left:0;
+}
+.field_type-flexible_content .field-repeater-toggle-single {
+	position: absolute;
+	top: 0;
+	margin-top: 4px;
+	margin-left: 3px;
+	left: 5px;
+	z-index: 99;
+	border: none;
+	background: #fff;
+	box-shadow: none;
+}
+.field-repeater-toggle-all {
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
+	color: #ccc !important;
+
+}
+.field-repeater-toggle-all:focus,
+.field-repeater-toggle-single:focus {
+	outline:0;
+	-webkit-box-shadow:none !important;
+	box-shadow:none !important;
+}
+.field-repeater-toggle::before {
+	color: #ccc;
+}
+.field-repeater-toggle-all::before {
+	vertical-align: middle;
+	color: #ccc;
+}
+.repeater-button-cell {
+	width:0 !important;
+}
+.field_type-flexible_content .repeater-button-cell .field-repeater-toggle-single {
+	margin-left: 0;
+	margin-top: -14px;
+	background: #f4f4f4;
+}
+.field_type-flexible_content .collapsed-row .repeater-button-cell .field-repeater-toggle-single {
+	margin-left: 35px;
+}
+.row-layout .acf-tab-group li.active a {
+	background: #fff;
+}

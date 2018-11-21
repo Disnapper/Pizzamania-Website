@@ -1,0 +1,33 @@
+/**
+ * Related Posts Section
+ */
+.single .no-full-image .related-posts .badge {
+  margin-bottom: 0;
+}
+
+.related-posts {
+  margin: 0 0 40px 0;
+  position: relative;
+
+  .related-inner {
+    position: relative;
+  }
+  .badgesliver {
+    position: absolute;
+    left: 5px;
+    top: -15px;
+  }
+  .grid-item {
+    width: 49.69%;
+    height: 326px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background: #222;
+  }
+  .title, .title a {
+    font-size: 28px !important;
+  }
+  a.button {
+    display: none;
+  }
+}

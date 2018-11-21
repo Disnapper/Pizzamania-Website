@@ -1,0 +1,119 @@
+/**
+ * Minimal Post CSS
+ */
+.minimal {
+  overflow: visible !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  width: 100%;
+  border-top: 1px solid #f3f3f3;
+  border-color: rgba(0, 0, 0, 0.05);
+
+  .minimal-content {
+    z-index:1;
+  }
+
+  a.postlink {
+    display: block;
+    color: #000;
+
+    .post-break {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .date, .author, .subtitle, .subheadline {
+      position: relative;
+      @include opacity(0.5);
+      color: #000;
+      @include transition(color 0.5s ease);
+    }
+
+    .date, .subheadline {
+      margin-bottom: 20px;
+    }
+
+    .author, .subtitle {
+      margin-top: 30px;
+    }
+
+    .date {
+      i {
+        font-size: 12px;
+        margin-right: 5px;
+      }
+    }
+
+    .minimal-background {
+      background-size: cover;
+      -webkit-background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-left: 0;
+      padding: 75px 0;
+      margin-right: 0;
+    }
+
+    .title {
+      position: relative;
+      display: block;
+
+      h2 {
+        margin-bottom: 0;
+        @include transition(color 0.5s ease);
+      }
+    }
+
+    .post-break .overlay {
+      z-index: initial;
+      background-color: #fff;
+      @include opacity(1);
+      @include transition(background-color 0.5s ease)
+    }
+
+    &:hover .post-break {
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .author,
+      .subtitle,
+      .subheadline,
+      .date,
+      .title h2 {
+        color: #fff;
+      }
+    }
+  }
+
+  &.sticky {
+    &:before {
+      color:#fff;
+    }
+    a.postlink {
+      .post-break .overlay {
+        background-color:#f3f3f3;
+      }
+
+      &:hover .post-break {
+        .overlay {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .author,
+        .subtitle,
+        .subheadline,
+        .date,
+        .title h2 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/* Center Alignment */
+.page-align-center .minimal .minimal-content {
+  margin: auto;
+  float: none;
+}

@@ -1,0 +1,336 @@
+/**
+ * Inputs
+ */
+input:focus {
+  outline: none;
+}
+
+input[type=text], textarea {
+  margin: 0 0 20px 0;
+  border: none;
+  background: #e8e8e8;
+  background: rgba(100, 100, 100, 0.09);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  width: 90%;
+  padding: 10px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  background: #e3e3e3;
+  background: rgba(100, 100, 100, 0.15);
+  outline: none !important;
+}
+
+select {
+  background: #e8e8e8;
+  background: rgba(100, 100, 100, 0.09);
+  padding: 12px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea,
+#commentsubmit input[type="text"],
+#commentsubmit textarea,
+.contactsubmit input[type="text"],
+.contactsubmit textarea,
+.contactsubmit select,
+select#top_nav_menu {
+  color: #555;
+  border: none;
+  background: #e8e8e8;
+  background: rgba(100, 100, 100, 0.09);
+  transition: background 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -webkit-appearance: none;
+  @include border-radius(0);
+}
+
+input[type="submit"] {
+  margin-top: 0;
+  -webkit-appearance: none;
+}
+
+label, .label-above label {
+  margin-bottom: 15px;
+}
+
+/* Search Box */
+.search {
+  position: relative;
+}
+
+.widget .search i {
+  top: 5px;
+}
+
+input#s {
+  font-size: 12px;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  max-width: 300px;
+  margin: 0;
+  -webkit-appearance: none;
+  @include border-radius(0);
+  padding: 0 14px;
+  color: #555;
+  border: none;
+  background: #e3e3e3;
+  background: rgba(0, 0, 0, 0.075);
+}
+
+input#s::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+  line-height: 42px;
+}
+
+input#s:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  line-height: 42px;
+}
+
+input#s::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+  line-height: 42px;
+}
+
+input#s:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+  font-size: 14px;
+  line-height: 42px;
+}
+
+input#s::-ms-clear {
+  display: none;
+}
+
+/* Contact Forms */
+.ninja-forms-form-wrap input[type=text],
+.ninja-forms-form-wrap textarea {
+  margin-bottom: 10px;
+}
+
+div.ninja-forms-required-items {
+  font-size: 12px;
+  float: right;
+  color: #999;
+}
+
+.ninja-forms-field-error,
+.ninja-forms-error-msg,
+.ninja-forms-field-error p {
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.struck {
+  .ninja-forms-form-wrap input,
+  .ninja-forms-form-wrap textarea {
+    padding: 12px;
+  }
+  .ninja-forms-response-msg {
+
+    &.ninja-forms-success-msg {
+      p {
+        color: #63AE39;
+      }
+    }
+    &.ninja-forms-error-msg {
+      p {
+        color: #ff0000;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+#footer #ninja_forms_form_1_process_msg > img {
+  display: none;
+}
+
+.struck .field-wrap.label-left .ninja-forms-field,
+.struck .field-wrap.label-left .ninja-forms-star-rating-control {
+  margin-left: 0;
+}
+
+.struck #ui-datepicker-div .ui-datepicker-header,
+.struck #ui-datepicker-div .ui-datepicker-calendar th,
+.struck #ui-datepicker-div .ui-datepicker-calendar td {
+  padding: 10px;
+  text-align: center;
+  line-height: 13px;
+  font-size: 13px;
+}
+
+.ui-datepicker-header {
+  background: #222;
+  color: #fff;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar th {
+  background: #dcdcdc;
+  color: #999;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar td {
+  border: 1px solid #fff;
+}
+
+#ui-datepicker-div .ui-icon {
+  text-indent: 99999px;
+  display: block;
+}
+
+#contactform {
+  margin-bottom: 30px;
+}
+
+textarea {
+  overflow: hidden;
+  line-height: 21px;
+}
+
+.contactsubmit span {
+  color: #c85849;
+}
+
+.contactsubmit select {
+}
+
+.contactsubmit .formrow {
+  height: 90px;
+}
+
+.contactsubmit .messagerow {
+  padding-bottom: 15px;
+}
+
+.contactsubmit label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.contactsubmit input[type=text], .contactsubmit textarea, .contactsubmit select {
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #e3e3e3;
+  font-size: 12px;
+}
+
+.contactsubmit input[type=text] {
+  width: 90%;
+}
+
+.contactsubmit select {
+  width: 100%;
+}
+
+.contactsubmit input[type=submit] {
+  border: none;
+}
+
+.contactsubmit textarea {
+  width: 95%;
+}
+
+.contactsubmit #submit {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border: inherit;
+  width: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+.contactsubmit input:focus, .contactsubmit textarea:focus {
+  border: 1px solid #999;
+  outline: 0;
+}
+
+.contactsubmit .radiobutton {
+  margin-left: 10px;
+  display: block;
+  margin-right: 0;
+  width: 100px;
+  float: left;
+  line-height: 30px;
+  height: 45px;
+  font-size: 12px;
+  text-transform: none;
+}
+
+.contactsubmit input[type="radio"] {
+  font-size: 12px;
+  display: inline;
+  float: left;
+  width: 15px;
+  margin: 8px 5px 0 0;
+}
+
+.contactsubmit label.error, .ag_contact_widget label.error {
+  font-size: 10px;
+  color: #c85849;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+p.loading {
+  display: none;
+}
+
+.contactcontent {
+  margin-bottom: 30px;
+}
+
+.emailsuccess {
+  margin-bottom: 30px;
+  color: #63AE39;
+  background: #E6F9DC;
+  border: 1px solid #81CE56;
+  padding: 20px;
+  box-shadow: 0 1px 2px #F0F0F0;
+  -moz-box-shadow: 0 1px 2px #F0F0F0;
+  -webkit-box-shadow: 0 1px 2px #F0F0F0;
+  text-shadow: 0 1px 0 white;
+}
+
+.singlecontent .emailsuccess h4, .emailsuccess h4 {
+  color: #407c1f;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.emailsuccess p {
+  margin: 0;
+  color: #63AE39;
+}
+
+.ag_contact_widget label.error {
+  margin-top: -15px;
+  display: block;
+  margin-bottom: 15px;
+}

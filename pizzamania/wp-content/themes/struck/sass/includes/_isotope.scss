@@ -1,0 +1,156 @@
+/**
+ * Isotope Container
+ */
+.isotopecontainer {
+  margin-bottom: 0;
+  overflow: visible !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .isobrick {
+    float: left;
+    display: block;
+    overflow: hidden;
+    @include transform(translateZ(0));
+
+    &.grid {
+      @include opacity(0); // let's fade them in dynamically
+    }
+
+    &.fade-in {
+      opacity:1;
+    }
+
+  }
+
+  // infinite scroll
+  #infscr-loading {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -25px;
+  }
+
+  /* clear fix */
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/**
+ * Isotope Transitions
+ */
+.isotope {
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -ms-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+
+  &, .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+  }
+
+  .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity;
+  }
+}
+
+/* Disabling Isotope CSS3 Transitions */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/**
+ * Isotope Filter
+ */
+.filtercontainer {
+  padding-top: 45px;
+  padding-bottom: 40px;
+
+  ul.filter {
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block;
+
+    li {
+      list-style-type: none;
+      float: left;
+      text-align: left;
+      margin: 12px 5px 0 0;
+
+      a, a:visited, a:active {
+        display: block;
+        padding-bottom: 9px;
+        margin-right: 30px;
+        margin-bottom: 0;
+        color: #999;
+        border: 2px solid transparent;
+        position: relative;
+      }
+
+      a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: 0;
+        width: 0;
+        height: 2px;
+        background: #222;
+        transition: all 200ms ease;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+      }
+
+      a.active, a:hover {
+        color: #222;
+        &:after {
+          width: 100%;
+          margin-left: -50%;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Pagination
+ */
+.infinite-pagination {
+  text-align: center;
+  min-height: 100px;
+
+  .more-posts a,
+  .prev-posts a {
+    display: block;
+    border-top: 1px solid #f3f3f3;
+    border-color: rgba(0, 0, 0, 0.05);
+    color: #000;
+    padding: 50px;
+    @include opacity(0.5);
+
+    &:hover {
+      @include opacity(0.75);
+    }
+  }
+}

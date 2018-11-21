@@ -1,0 +1,160 @@
+/* General Styles */
+.wp-caption {
+  margin: 0 0 30px 0;
+  width: auto;
+  position: relative;
+  max-width: 100%;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+  display: block;
+}
+
+/* Typography */
+.wp-caption-text, .gallery-caption, .mfp-title {
+  padding: 20px 30px;
+  display: block;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  line-height: 16px;
+  background: #e3e3e3;
+  background: rgba(0, 0, 0, 0.05);
+  color: #999;
+  font-size: 0.85em;
+  text-align: left;
+}
+
+.mfp-title,
+.wp-caption-text.caption-fixedimg span,
+.wp-caption-text.caption-normal span,
+.single-slideshow .gallery-caption span {
+  padding: .4em 0;
+  color: #fff;
+  display: inline;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0.8em 0 0 rgba(0, 0, 0, 0.5), -0.8em 0 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  line-height: 2.1em;
+
+  a {
+    color: #fff;
+  }
+}
+
+/**
+ * Image Captions
+ */
+/* Normal and Fixed Image Captions */
+.wp-caption-text.caption-fixedimg, .wp-caption-text.caption-normal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 !important;
+  background: transparent;
+}
+
+/* Alignment Captions */
+.wp-caption.aligncenter {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.wp-caption.alignleft .wp-caption-text, .wp-caption.alignright .wp-caption-text, .wp-caption.aligncenter .wp-caption-text {
+  position: static;
+  background: #e3e3e3;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.wp-caption.alignleft .wp-caption-text span,
+.wp-caption.alignright .wp-caption-text span,
+.wp-caption.aligncenter .wp-caption-text span {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  color: #999;
+}
+
+/* Parallax-Style Caption */
+.post-break .wp-caption-text {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding: 0;
+  background: none;
+  margin: 0 0 0 1em;
+}
+
+.post-break .wp-caption-text span {
+  display: inline;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 1em 0 0 rgba(0, 0, 0, 0.5), -1em 0 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px 0;
+  line-height: 35px;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Gallery Captions
+ */
+/* Slideshow Caption */
+.single-slideshow .gallery-caption {
+  background: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+/* Regular Caption */
+.gallery-caption span {
+  display: block;
+  padding: 13px 20px;
+}
+
+.gallery-item .gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+
+/* Carousel and Gallery Captions */
+.single-carousel .gallery-caption, .single-gallery .gallery-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  color: #fff;
+  z-index: 9;
+}
+
+.single-carousel .gallery-icon .gallery-caption,
+.single-gallery .gallery-item .gallery-caption {
+  height: 100%;
+  width: 100%;
+  display: block;
+  @include opacity(1);
+  background: transparent;
+  padding: 0;
+  line-height: 22px;
+}
+
+.no-csstransitions .single-carousel .gallery-icon .gallery-caption span,
+.no-csstransitions .single-gallery .gallery-item .gallery-caption span {
+  display: none;
+}
